@@ -6,9 +6,11 @@ import Essentials from "@ckeditor/ckeditor5-essentials/src/essentials";
 import Bold from "@ckeditor/ckeditor5-basic-styles/src/bold";
 import Italic from "@ckeditor/ckeditor5-basic-styles/src/italic";
 import Paragraph from "@ckeditor/ckeditor5-paragraph/src/paragraph";
+import List from "@ckeditor/ckeditor5-list/src/list";
+import Link from "@ckeditor/ckeditor5-link/src/link";
 const editorConfiguration = {
-  plugins: [Essentials, Bold, Italic, Paragraph],
-  toolbar: ["bold", "italic"]
+  plugins: [Essentials, Bold, Italic, Paragraph, Link, List],
+  toolbar: ["bold", "italic", "bulletedList", "numberedList", "link"]
 };
 class App extends Component {
   render() {
