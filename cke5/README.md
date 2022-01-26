@@ -78,3 +78,8 @@ To get around this, we will use craco: hpmjs.com/package/@craco/craco
 
 https://ckeditor.com/docs/ckeditor5/latest/builds/guides/integration/advanced-setup.html#scenario-2-building-from-source
 https://medium.com/@adamerose/using-ckeditor-5-in-create-react-app-without-ejecting-cc24ffb3fd9c
+
+To updated to the newest version of classic editor we want to use:
+npm install --save @ckeditor/ckeditor5-react @ckeditor/ckeditor5-build-classic
+
+Added dependency on styled components

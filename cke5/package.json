@@ -8,6 +8,7 @@
     "@ckeditor/ckeditor5-dev-utils": "26.0.1",
     "@ckeditor/ckeditor5-editor-classic": "31.0.0",
     "@ckeditor/ckeditor5-essentials": "31.0.0",
+    "@ckeditor/ckeditor5-heading": "31.0.0",
     "@ckeditor/ckeditor5-link": "31.0.0",
     "@ckeditor/ckeditor5-list": "31.0.0",
     "@ckeditor/ckeditor5-paragraph": "31.0.0",
@@ -17,7 +18,8 @@
     "raw-loader": "^3.1.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-scripts": "4.0.3"
+    "react-scripts": "4.0.3",
+    "styled-components": "^5.3.3"
   },
   "scripts": {
     "start": "craco start",
