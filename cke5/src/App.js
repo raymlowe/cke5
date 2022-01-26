@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import CKEditorInspector from '@ckeditor/ckeditor5-inspector';
 import { CKEditor } from '@ckeditor/ckeditor5-react';
 
 // NOTE: Use the editor from source (not a build)!
@@ -55,6 +56,8 @@ class App extends Component {
             onReady={editor => {
               // You can store the "editor" and use when it is needed.
               console.log('Editor is ready to use!', editor);
+              // This enables the CKEditor inspector
+              CKEditorInspector.attach(editor)
             }}
             onChange={(event, editor) => {
               const data = editor.getData();

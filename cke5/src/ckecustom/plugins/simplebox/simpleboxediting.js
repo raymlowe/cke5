@@ -21,7 +21,7 @@ export default class impleBoxEditing extends Plugin {
         const schema = this.editor.model.schema;
 
         schema.register('simpleBox', {
-            // Behaves like a self-contained object (e.g. an image).
+            // Behaves like a self-contained object (e.g. an image). So you can't just delete part of the box
             isObject: true,
 
             // Allow in places where other blocks are allowed (e.g. directly in the root).
@@ -48,6 +48,8 @@ export default class impleBoxEditing extends Plugin {
             allowContentOf: '$root'
         });
 
+        //Check to disallow the adding of a simple box inside of another simple box
+        //Since we have configured allowed content to be :$root (aka all content allowed in root)
         schema.addChildCheck((context, childDefinition) => {
             if (context.endsWith('simpleBoxDescription') && childDefinition.name == 'simpleBox') {
                 return false;

@@ -83,3 +83,7 @@ To updated to the newest version of classic editor we want to use:
 npm install --save @ckeditor/ckeditor5-react @ckeditor/ckeditor5-build-classic
 
 Added dependency on styled components
+npm install --save styled-components
+
+CKE5 Inspector:
+npm install --save-dev @ckeditor/ckeditor5-inspector

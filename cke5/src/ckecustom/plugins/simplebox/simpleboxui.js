@@ -1,6 +1,7 @@
 import ButtonView from '@ckeditor/ckeditor5-ui/src/button/buttonview';
 import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
 
+//This is the UI Button that is attached to the CKETool bar
 export default class SimpleBoxUI extends Plugin {
     init() {
         console.log( 'SimpleBoxUI#init() got called' );
