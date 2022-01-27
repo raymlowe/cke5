@@ -13,10 +13,11 @@ import Link from "@ckeditor/ckeditor5-link/src/link";
 import Heading from "@ckeditor/ckeditor5-heading/src/heading";
 
 import SimpleBox from "./ckecustom/plugins/simplebox/simplebox";
+import Placeholder from "./ckecustom/plugins/placeholder/placeholder";
 
 const editorConfiguration = {
-  plugins: [Essentials, Bold, Italic, Link, List, SimpleBox, Heading],
-  toolbar: ["heading", "bold", "italic", "bulletedList", "numberedList", "link", "simpleBox"]
+  plugins: [Essentials, Bold, Italic, Link, List, SimpleBox, Heading, Placeholder],
+  toolbar: ["heading", "bold", "italic", "bulletedList", "numberedList", "link", "simpleBox", '|', 'placeholder']
 };
 
 const WYSIWYG = styled.div`
