@@ -3,7 +3,7 @@ import Command from '@ckeditor/ckeditor5-core/src/command';
 
 
 /*
-*You can interact with editori features by the commands they expose ie:
+*You can interact with editor features by the commands they expose ie:
 *bolding of text or checking if action can be executed in selection's current location
 *as well as observing current properties (is text bolded)
 *
